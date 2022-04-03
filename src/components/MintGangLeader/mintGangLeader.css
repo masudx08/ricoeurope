@@ -1,0 +1,18 @@
+.mintGangLeader{
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../assets/Prison/prison2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.gang-leader{
+  background-color: var(--secondary-color);
+  height: 300px;
+  max-width: 350px;
+  max-height: 300px;
+  margin: 40px 0;
+}
+.gang-leader img{
+  height: 100%;
+}
