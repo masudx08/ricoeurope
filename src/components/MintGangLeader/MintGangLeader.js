@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import GangLeaderM from '../../assets/img/Characters/png/gang_leader_m.png'
 import GangLeaderF from '../../assets/img/Characters/png/gang_leader_f.png'
@@ -6,6 +6,7 @@ import './mintGangLeader.css'
 import  {AiOutlineLeft, AiOutlineRight} from 'react-icons/ai'
 import {RiTruckLine} from 'react-icons/ri'
 export default function MintGangLeader() {
+  const [selectedBtn, setSelectedBtn] = useState('gangleader')
   return (
     <div className='mintGangLeader'>
       <div className="container">
@@ -13,23 +14,63 @@ export default function MintGangLeader() {
           <h1 >Minting</h1>
           <p>You must have at least 1gang leader in order to practise in the</p>
           <div>
-            <button className='mybtn mybtn-o'>Minting Gang Leader</button>
-            <button className='mybtn mybtn-d'>Random Mint</button>
+            <button className='mybtn mybtn-o' onClick={()=>setSelectedBtn('gangleader')}>Mint Gang Leader</button>
+            <button className='mybtn mybtn-d' onClick={()=>setSelectedBtn('othernft')}>Mint Other NFT</button>
           </div>
         </div>
         <div>
-          <Row className='justify-content-center'>
-            <Col md={4}>
-              <div className='gang-leader'>
-                <img src={GangLeaderM} alt="" />
-              </div>
-            </Col>
-            <Col md={4}>
-              <div className='gang-leader'>
-                <img src={GangLeaderF} alt="" />
-              </div>
-            </Col>
-          </Row>
+         {
+           selectedBtn == 'gangleader' &&
+           <Row className='justify-content-center'>
+           <Col md={4}>
+             <div className='gang-leader'>
+               <img src={GangLeaderM} alt="" />
+             </div>
+           </Col>
+           <Col md={4}>
+             <div className='gang-leader'>
+               <img src={GangLeaderF} alt="" />
+             </div>
+           </Col>
+         </Row>
+         }
+
+          {
+           selectedBtn == 'othernft' &&
+           <Row className='other-nft__row'>
+           <Col md={4}>
+             <div className='other-nft'>
+               <img src={GangLeaderM} alt="" />
+             </div>
+           </Col>
+           <Col md={4}>
+             <div className='other-nft'>
+               <img src={GangLeaderF} alt="" />
+             </div>
+           </Col>
+           <Col md={4}>
+             <div className='other-nft'>
+               <img src={GangLeaderM} alt="" />
+             </div>
+           </Col>
+           <Col md={4}>
+             <div className='other-nft'>
+               <img src={GangLeaderM} alt="" />
+             </div>
+           </Col>
+           <Col md={4}>
+             <div className='other-nft'>
+               <img src={GangLeaderF} alt="" />
+             </div>
+           </Col>
+           <Col md={4}>
+             <div className='other-nft'>
+               <img src={GangLeaderM} alt="" />
+             </div>
+           </Col>
+         </Row>
+         }
+
           <Row className='d-flex justify-content-center'>
             <div   className='gangLeader__parentInputContainer'>
               <Col md={6} className='gangLeader__inputContainer'>
@@ -44,7 +85,7 @@ export default function MintGangLeader() {
               <Col xs={12} md={5} className='gangLeader__rightinputContainer'>
                 <div>
                   <p>Cost</p>
-                  <p>5000$</p>
+                  <p>1 AVAX</p>
                 </div>
                 <div>
                   <button className='mybtn mybtn-p'>MINT</button>
@@ -54,7 +95,7 @@ export default function MintGangLeader() {
           </Row>
           <Row>
             <div className='mt-5 mb-5'>
-              <p>50000 MINTED</p>
+              <p>99 MINTED LEADERS IN THE META</p>
             </div>
             <div className='gangLeader__minted'>
               <Col xs={4} md={3} style={{position:'relative'}}>

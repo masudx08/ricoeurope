@@ -36,6 +36,7 @@
   border-radius: 3px;
   align-items: center;
   padding: 10px 20px;
+  
 }
 .gangLeader__inputContainer .arrow{
   background-color: var(--secondary-color);
@@ -80,6 +81,24 @@
 }
 
 
+
+/* other nft  */
+.other-nft{
+  background-color: var(--secondary-color);
+  height: 300px;
+  max-width: 200px;
+  max-height: 220px;
+  margin: 40px 0;
+}
+.other-nft img{
+  height: 100%;
+}
+.other-nft__row{
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+}
+
 @media screen and (max-width: 992px){
   .gangLeader__parentInputContainer{
     flex-direction: column;
@@ -91,4 +110,11 @@
   .gangLeader__rightinputContainer > div{
     width: 50%
   }
+}
+@media screen and (min-width: 993px){
+  .gangLeader__parentInputContainer{
+    max-width: 70%;
+    margin: auto;
+  }
+  
 }
