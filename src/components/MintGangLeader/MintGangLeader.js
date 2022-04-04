@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import GangLeaderM from '../../assets/Characters/png/gang_leader_m.png'
-import GangLeaderF from '../../assets/Characters/png/gang_leader_f.png'
+import GangLeaderM from '../../assets/img/Characters/png/gang_leader_m.png'
+import GangLeaderF from '../../assets/img/Characters/png/gang_leader_f.png'
 import './mintGangLeader.css'
 export default function MintGangLeader() {
   return (

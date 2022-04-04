@@ -10,6 +10,38 @@
   outline: none;
 }
 
+@font-face {
+  font-family: Gilroy;
+  src: url(./assets/fonts/Satoshi-Variable.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url(./assets/fonts/Gilroy-Light.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url(./assets/fonts/Gilroy-Regular.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url(./assets/fonts/Gilroy-Medium.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url(./assets/fonts/Gilroy-Bold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url(./assets/fonts/Gilroy-Heavy.ttf);
+  font-weight: 900;
+}
+
+
 .container{
   width: 80%;
   margin: auto
@@ -36,5 +68,5 @@
 .mybtn-d{
   border: 1px solid gray;
   color: rgba(183, 169, 169, 0.8);
-  background-color: rgba(128, 128, 128, 0.568);;
+  background-color: rgba(128, 128, 128, 0.568);
 }
