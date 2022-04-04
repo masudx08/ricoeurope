@@ -3,12 +3,14 @@ import { Col, Row } from 'react-bootstrap'
 import GangLeaderM from '../../assets/img/Characters/png/gang_leader_m.png'
 import GangLeaderF from '../../assets/img/Characters/png/gang_leader_f.png'
 import './mintGangLeader.css'
+import  {AiOutlineLeft, AiOutlineRight} from 'react-icons/ai'
+import {RiTruckLine} from 'react-icons/ri'
 export default function MintGangLeader() {
   return (
     <div className='mintGangLeader'>
       <div className="container">
         <div>
-          <h1>Minting</h1>
+          <h1 >Minting</h1>
           <p>You must have at least 1gang leader in order to practise in the</p>
           <div>
             <button className='mybtn mybtn-o'>Minting Gang Leader</button>
@@ -28,32 +30,48 @@ export default function MintGangLeader() {
               </div>
             </Col>
           </Row>
-          <Row>
-            <Col xs={10}>
-              <div>
-                <button>{`<`}</button>
+          <Row className='d-flex justify-content-center'>
+            <div   className='gangLeader__parentInputContainer'>
+              <Col md={6} className='gangLeader__inputContainer'>
+                <div className="arrow">
+                <AiOutlineLeft />
+                </div>
                 <input type="text" value='05' />
-                <button>{`>`}</button>
-              </div>
-              <div>
+                <div className="arrow">
+                <AiOutlineRight />
+                </div>
+              </Col>
+              <Col xs={12} md={5} className='gangLeader__rightinputContainer'>
                 <div>
                   <p>Cost</p>
-                  <p>1 AVAX</p>
+                  <p>5000$</p>
                 </div>
                 <div>
                   <button className='mybtn mybtn-p'>MINT</button>
                 </div>
-              </div>
-            </Col>
+              </Col>
+            </div>
           </Row>
           <Row>
-            <div>
+            <div className='mt-5 mb-5'>
               <p>50000 MINTED</p>
             </div>
-            <div>
-              <Col xs={4}>100</Col>
-              <Col xs={4}>300</Col>
-              <Col xs={4}>500</Col>
+            <div className='gangLeader__minted'>
+              <Col xs={4} md={3} style={{position:'relative'}}>
+                <div className="roll"></div>
+                <div className="before">
+                  <RiTruckLine className='truckicon' />
+                </div>
+              </Col>
+              <Col xs={4} md={3} style={{position:'relative'}}>
+                <div className="roll"></div>
+                <div className="before">100</div>
+              </Col>
+              <Col xs={4} md={3} style={{position:'relative'}}>
+                <div className="roll"></div>
+                <div className="before">300</div>
+                <div className="after">500</div>
+              </Col>
             </div>
           </Row>
         </div>

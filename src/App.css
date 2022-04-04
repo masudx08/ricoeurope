@@ -2,13 +2,7 @@
   --primary-color: #fdc110;
   --secondary-color: #1f1e1e;
 }
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-}
+
 
 @font-face {
   font-family: Gilroy;
@@ -41,6 +35,22 @@
   font-weight: 900;
 }
 
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+h1{
+  font-family: 'Gilroy', sans-serif;;
+  font-weight: 800;
+}
+p{
+  font-family: 'Gilroy', sans-serif;;
+  font-weight: 400;
+}
 
 .container{
   width: 80%;
