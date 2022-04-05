@@ -44,14 +44,19 @@
 }
 
 h1{
-  font-family: 'Gilroy', sans-serif;;
+  font-family: 'Gilroy', sans-serif;
   font-weight: 800;
 }
 p{
-  font-family: 'Gilroy', sans-serif;;
+  font-family: 'Gilroy', sans-serif;
   font-weight: 400;
 }
-
+.highlight-text{
+  color:var(--primary-color)
+}
+.highlight-bg{
+  background-color:var(--primary-color)
+}
 .container{
   width: 80%;
   margin: auto

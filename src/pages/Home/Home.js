@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <div>
       <Link to='/mint'>Mint</Link> <br />
+      <Link to='/mintresult'>Mint Result</Link> <br />
       <Link to='/stake'>Stake</Link> <br />
       <Link to='/swag'>Swag</Link> <br />
       <Link to='/breed'>Breed</Link> <br />

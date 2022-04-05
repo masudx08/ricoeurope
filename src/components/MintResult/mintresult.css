@@ -1,0 +1,44 @@
+.resultCont{
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../assets/img/Prison/prison2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+  position:  relative
+}
+.resultCont .innerContainer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 500px;
+}
+.resultCont p{
+  font-family: 'Gilroy', sans-serif;;
+}
+.resultCont .mybtn{
+  width: 250px;
+  margin-bottom: 20px;
+}
+.resultCont .image{
+  height: 220px;
+  max-width: 250px;
+  background-color: var(--secondary-color);
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.resultCont .image img{
+  height: 80%;
+}
+.innerContainer .expand-text{
+  position: absolute;
+  bottom: 2px;
+  left: 0; 
+  right: 0;
+  margin: 0;
+}

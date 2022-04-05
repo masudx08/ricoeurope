@@ -12,11 +12,21 @@
   max-width: 350px;
   max-height: 300px;
   margin: 40px 0;
+  position: relative;
 }
 .gang-leader img{
   height: 100%;
 }
-
+ .gang__innertext{
+  color: var(--primary-color);
+  background: #484747;
+  position: absolute;
+  top: 45%;
+  right: 6px;
+  padding: 5px 15px;
+  font-family: 'Gilroy';
+  font-size: 13px;
+}
 .gangLeader__inputContainer input{
   padding: 10px;
   border-radius: 20px;
@@ -58,6 +68,8 @@
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  background: #111111;
+  padding: 65px 10px 15px;
 }
 .gangLeader__minted .roll{
   height: 20px;
@@ -76,8 +88,11 @@
 }
 
 .truckicon{
-  font-size: 50px;
+  font-size: 55px;
   color: var(--primary-color)
+}
+.truckbefore{
+  top: -60px!important
 }
 
 
@@ -86,19 +101,25 @@
 .other-nft{
   background-color: var(--secondary-color);
   height: 300px;
-  max-width: 200px;
-  max-height: 220px;
+  max-width: 220px;
+  max-height: 200px;
   margin: 40px 0;
+  position: relative;
 }
 .other-nft img{
   height: 100%;
+  position: absolute;
+  left: 10px;
 }
 .other-nft__row{
   justify-content: center;
   width: 70%;
   margin: auto;
 }
-
+.other-nft .gang__innertext{
+  right: 5px;
+  padding: 3px 10px;
+}
 @media screen and (max-width: 992px){
   .gangLeader__parentInputContainer{
     flex-direction: column;
