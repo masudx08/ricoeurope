@@ -1,6 +1,7 @@
 .stakeContainer .mycard{
   height: 180px;
   background-color: var(--secondary-color);
+  border-radius: 5px;
   position: relative;
 }
 .stakeContainer .controler{
@@ -28,4 +29,8 @@
 }
 .stakeContainer .mycard img{
   height: 80%
+}
+
+.stakeContainer .row{
+  row-gap: 10px;
 }

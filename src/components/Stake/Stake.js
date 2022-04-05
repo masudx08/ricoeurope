@@ -36,7 +36,7 @@ export default function Stake() {
             <button>Unstake</button>
           </div>
         </div>
-        <Row>
+        <Row >
           {
             leaders.map((leader, i) => {
               return (
