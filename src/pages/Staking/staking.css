@@ -1,0 +1,29 @@
+.stakingCont{
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../assets/img/Prison/prison2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+.stake__switch{
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+.stake__switch h6{
+  line-height: 25px;
+}
+.stake__switch .stake{
+  color: green;
+  position: relative
+}
+.stake__switch .unstake{
+  color: red;
+  position: relative
+}
+
+.selected{
+ border-bottom: 2px solid var(--primary-color);
+}

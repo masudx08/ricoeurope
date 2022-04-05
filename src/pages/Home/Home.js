@@ -5,7 +5,7 @@ export default function Home() {
     <div>
       <Link to='/mint'>Mint</Link> <br />
       <Link to='/mintresult'>Mint Result</Link> <br />
-      <Link to='/stake'>Stake</Link> <br />
+      <Link to='/staking'>Staking</Link> <br />
       <Link to='/swag'>Swag</Link> <br />
       <Link to='/breed'>Breed</Link> <br />
       <Link to='/gangs'>Gangs</Link> <br />
