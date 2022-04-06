@@ -20,6 +20,8 @@ export default function Home() {
       <Link to='/b/police'>Police</Link> <br />
       <Link to='/b/spy'>Spy</Link> <br />
       <Link to='/b/thief'>Thief</Link> <br />
+      <Link to='/b/twin'>Twin</Link> <br />
+      <Link to='/b/triplet'>Triplet</Link> <br />
     </div>
   )
 }

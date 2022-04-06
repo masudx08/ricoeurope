@@ -18,6 +18,8 @@ import Member from './components/BreedResult/Member';
 import Police from './components/BreedResult/Police';
 import Spy from './components/BreedResult/Spy';
 import Thief from './components/BreedResult/Thief';
+import Twin from './components/BreedResult/Twin';
+import Triplet from './components/BreedResult/Triplet';
 export const MyContext = React.createContext()
 function App() {
 const [staking, setStaking] = useState('stake')
@@ -44,6 +46,8 @@ const defaultValue={
           <Route path="/b/police" element={<Police />} />
           <Route path="/b/spy" element={<Spy />} />
           <Route path="/b/thief" element={<Thief />} />
+          <Route path="/b/twin" element={<Twin />} />
+          <Route path="/b/triplet" element={<Triplet />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
