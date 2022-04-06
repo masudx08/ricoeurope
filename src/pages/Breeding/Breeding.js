@@ -8,7 +8,7 @@ export default function Breeding() {
   return (
     <div className='breedingCont'>
       <div className="container">
-        <div className='mb-3'>
+        <div className='mb-4'>
           <h1>BREEDING</h1>
           <p>You can combine up to a maximum of 10 gang members with your baby mama to speed up the process.</p>
         </div>
@@ -65,36 +65,73 @@ export default function Breeding() {
                 </Col>
               </Row>
               <div className="section2">
-                  <div className='text-start mt-3'>
-                    <h6 className='my-3 mt-4'>Gang Members 3/10</h6>
-                  </div>
-                  <Row>
-                    <Col md={3}>
-                     <div className="imgCont">
-                     <img src={MemberImg} alt="" />
-                     </div>
-                    </Col>
-                    <Col md={3}>
-                     <div className="imgCont">
-                     <img src={MemberImg} alt="" />
-                     </div>
-                    </Col>
-                    <Col md={3}>
-                     <div className="imgCont">
-                     <img src={MemberImg} alt="" />
-                     </div>
-                    </Col>
-                  </Row>
-                  <div className='text-end mt-3'>
-                    <button className='mybtn'>Select</button>
-                    <button className='mybtn'>Remove</button>
-                  </div>
+                <div className='text-start mt-3'>
+                  <h6 className='my-3 mt-4'>Gang Members 3/10</h6>
                 </div>
+                <Row>
+                  <Col md={3}>
+                    <div className="imgCont">
+                      <img src={MemberImg} alt="" />
+                    </div>
+                  </Col>
+                  <Col md={3}>
+                    <div className="imgCont">
+                      <img src={MemberImg} alt="" />
+                    </div>
+                  </Col>
+                  <Col md={3}>
+                    <div className="imgCont">
+                      <img src={MemberImg} alt="" />
+                    </div>
+                  </Col>
+                </Row>
+                <div className='text-end mt-3'>
+                  <button className='mybtn'>Select</button>
+                  <button className='mybtn'>Remove</button>
+                </div>
+              </div>
             </div>
           </Col>
           <Col md={6} className='rightbox'>
+            <div className="section1">
+              <div className='text-start mt-3'>
+                <h6 className='my-3 mt-4'>Gang Members 3/10</h6>
+              </div>
+              <Row>
+                <Col md={3}>
+                  <div className="imgCont">
+                    <img src={MemberImg} alt="" />
+                  </div>
+                </Col>
+                <Col md={3}>
+                  <div className="imgCont">
+                    <img src={MemberImg} alt="" />
+                  </div>
+                </Col>
+                <Col md={3}>
+                  <div className="imgCont">
+                    <img src={MemberImg} alt="" />
+                  </div>
+                </Col>
+              </Row>
+              <div className='text-start mt-3'>
+                <button className='mybtn'>Add</button>
+                <button className='mybtn'>Select All</button>
+              </div>
+            </div>
+
+            <div className='text-start mt-3'>
+              <p className="highlight-text">Time required to breed</p>
+              <p className='small-text'>1 Baby Mama & 1 Gang Member = 14 Days
+              Each + 1 gang member reduces by one day</p>
+              <p className="highlight-text mt-3">Breed Count</p>
+              <p className='small-text'>Each time a baby mama breeds an NFT +1 is added to her breed_count
+              The number of days it now takes for a baby mama to breed increases
+              by 1 after each mint.</p>
+            </div>
           </Col>
         </Row>
+        <button className="mybtn mybtn-p mt-4 savebtn">Save</button>
       </div>
     </div>
   )

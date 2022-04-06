@@ -87,6 +87,31 @@
   border: 1px solid #868282;
 }
 
+
+.breedingCont .savebtn{
+  font-family: "Gilroy";
+  font-weight: 800;
+
+}
+ /* =========== Right Box ==============  */
+ .rightbox .section1 .imgCont{
+  background-color: #3e3c3c;
+  border-radius: 3px;
+}
+.rightbox  .section1  .mybtn{
+  background: none;
+  color: #868282;
+  border: 1px solid #868282;
+  padding: 3px 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.rightbox .small-text{
+  font-size: 15px;
+}
+
+
 @media screen and (max-width: 992px) {
   .breedingCont .leftbox, .breedingCont .rightbox{
     width: 100%;
@@ -103,6 +128,9 @@
     height:  150px;
   }
   .leftbox .section2 .imgCont{
+    height: 100px;
+  }
+  .rightbox .section1 .imgCont{
     height: 100px;
   }
 }
