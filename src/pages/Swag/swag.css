@@ -98,19 +98,26 @@
   border-radius: 3px;
 }
 .rightbox  .section1  .mybtn{
-  background: none;
-  color: #868282;
-  border: 1px solid #868282;
-  padding: 3px 10px;
   font-weight: 500;
   font-size: 14px;
 }
-
+.rightbox .section1 .outlinebtn{
+  background: none;
+  color: #868282;
+  border: 1px solid #868282;
+}
 .rightbox .small-text{
   font-size: 15px;
 }
 
+.swagCont .rightbox .unselect{
+  color: #868282
+}
 
+.swagCont .rightbox .row > * {
+  padding-right: calc(var(--bs-gutter-x) * .1);
+    padding-left: calc(var(--bs-gutter-x) * .1);
+}
 @media screen and (max-width: 992px) {
   .swagCont .leftbox, .swagCont .rightbox{
     width: 100%;
@@ -130,6 +137,6 @@
     height: 90px;
   }
   .rightbox .section1 .imgCont{
-    height: 100px;
+    height: 80px;
   }
 }

@@ -5,6 +5,10 @@ import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons
 import BabyMamaImg from '../../assets/img/Characters/png/babymama.png'
 import MemberImg from '../../assets/img/Characters/png/member.png'
 export default function Swag() {
+  const inventories = [
+    {}, {}, {}, {}, {}, {}
+  ]
+
   return (
     <div className='swagCont'>
       <div className="container">
@@ -29,9 +33,8 @@ export default function Swag() {
                 <Col md={4}>
                   <div className='leftimg'>
                     <img src={BabyMamaImg} alt="" />
-                    <div className='d-flex justify-content-between p-1'>
-                      <p>#101</p>
-                      <p>+3</p>
+                    <div className='highlight-text'>
+                      <p>Expand View</p>
                     </div>
                   </div>
                 </Col>
@@ -73,47 +76,70 @@ export default function Swag() {
                  
                 </Row>
                 <div className='text-start mt-3'>
-                  <button className='mybtn mybtn-p'>Buy</button>
+                  <button className='mybtn mybtn-p m-0'>Buy</button>
                 </div>
               </div>
             </div>
           </Col>
           <Col md={6} className='rightbox'>
-            <div className="section1">
+          <div className='text-start d-flex' style={{columnGap:'10px'}}>
+              <h6>Filter</h6>
+              <h6 className='unselect'>Level</h6>
+              <h6 className='unselect'>Type</h6>
+            </div>
+            <div className="section1 px-2">
               <div className='text-start mt-3'>
-                <h6 className='my-3 mt-4'>Gang Members 3/10</h6>
+                <h6 className='my-3 mt-4'>Inventory</h6>
               </div>
               <Row>
-                <Col md={3}>
-                  <div className="imgCont">
-                    <img src={MemberImg} alt="" />
-                  </div>
-                </Col>
-                <Col md={3}>
-                  <div className="imgCont">
-                    <img src={MemberImg} alt="" />
-                  </div>
-                </Col>
-                <Col md={3}>
-                  <div className="imgCont">
-                    <img src={MemberImg} alt="" />
-                  </div>
-                </Col>
+                {
+                  inventories.map((inventory, i)=>{
+                    return (
+                      <Col key={i} md={2}>
+                      <div className="imgCont">
+                      </div>
+                    </Col>
+                    )
+                  })
+                }
+                
               </Row>
               <div className='text-start mt-3'>
-                <button className='mybtn'>Add</button>
-                <button className='mybtn'>Select All</button>
+                <h6 className='my-3 mt-4'>Glasses</h6>
               </div>
-            </div>
-
-            <div className='text-start mt-3'>
-              <p className="highlight-text">Time required to breed</p>
-              <p className='small-text'>1 Baby Mama & 1 Gang Member = 14 Days
-              Each + 1 gang member reduces by one day</p>
-              <p className="highlight-text mt-3">Breed Count</p>
-              <p className='small-text'>Each time a baby mama breeds an NFT +1 is added to her breed_count
-              The number of days it now takes for a baby mama to breed increases
-              by 1 after each mint.</p>
+              <Row>
+                {
+                  inventories.map((inventory, i)=>{
+                    return (
+                      <Col key={i} md={2}>
+                      <div className="imgCont">
+                      </div>
+                    </Col>
+                    )
+                  })
+                }
+                
+              </Row>
+              <div className='text-start mt-3'>
+                <h6 className='my-3 mt-4'>Jewelery</h6>
+              </div>
+              <Row>
+                {
+                  inventories.map((inventory, i)=>{
+                    return (
+                      <Col key={i} md={2}>
+                      <div className="imgCont">
+                      </div>
+                    </Col>
+                    )
+                  })
+                }
+                
+              </Row>
+              <div className='text-start mt-3'>
+              <button className="mybtn mybtn-p m-0 ">Add</button>
+              <button className="mybtn outlinebtn">Select</button>
+              </div>
             </div>
           </Col>
         </Row>
