@@ -7,6 +7,9 @@
   min-height: 100vh;
   padding: 50px 0;
 }
+.swagCont p{
+  margin-bottom: 0;
+}
 .rowCont{
   column-gap: 20px;
   row-gap: 20px;
@@ -15,10 +18,118 @@
 }
 .swagCont .leftbox, .swagCont .rightbox{
   background-color: var(--secondary-color);
-  height: 70vh;
   width:  35vw;
   max-height: 632px;
   max-width: 540px;
   color: white;
   overflow: hidden;
+  padding: 15px;
+  border-radius: 10px;
+}
+.leftbox .controler{
+  display: flex;
+  justify-content: space-between;
+}
+.leftbox .controler .right{
+  display: flex;
+  align-items: center;
+}
+.leftbox .controler .right svg{
+  font-size: 27px;
+  color: #6b6b6b;
+}
+.leftbox .leftimg p{
+  font-size: 14px;
+}
+
+.leftbox  .time{
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 20px;
+  color: #868282;
+}
+
+.leftbox .time span{
+  border: 1px solid #868282;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  padding-top: 2px;
+}
+.leftbox .time p{
+  margin-top: 8px;
+}
+
+.leftbox .mybtn{
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.leftbox .section1 .leftimg{
+  background-color: #3e3c3c;
+  border-radius: 3px;
+  
+}
+.leftbox .section1 .leftimg img{
+  width:  80%;
+}
+
+.leftbox .section2 .imgCont{
+  background-color: #3e3c3c;
+  border-radius: 3px;
+}
+
+/* .leftbox .section2 .mybtn{
+  background: none;
+  color: #868282;
+  border: 1px solid #868282;
+} */
+
+
+.swagCont .savebtn{
+  font-family: "Gilroy";
+  font-weight: 800;
+
+}
+ /* =========== Right Box ==============  */
+ .rightbox .section1 .imgCont{
+  background-color: #3e3c3c;
+  border-radius: 3px;
+}
+.rightbox  .section1  .mybtn{
+  background: none;
+  color: #868282;
+  border: 1px solid #868282;
+  padding: 3px 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.rightbox .small-text{
+  font-size: 15px;
+}
+
+
+@media screen and (max-width: 992px) {
+  .swagCont .leftbox, .swagCont .rightbox{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .section1 .row{
+    row-gap: 20px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .swagCont .leftbox .section1 .leftimg img{
+    height:  100px;
+  }
+  .swagCont .leftbox .section2 .imgCont{
+    height: 90px;
+  }
+  .rightbox .section1 .imgCont{
+    height: 100px;
+  }
 }
