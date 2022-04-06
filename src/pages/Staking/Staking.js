@@ -9,7 +9,7 @@ export default function Staking() {
   return (
     <div className='stakingCont'>
       <h1>Staking</h1>
-      <div className='stake__switch'>
+      <div className='stake__switch mb-5'>
         <h6 className={staking=='stake'?'stake selected':'stake'} onClick={()=>setStaking('stake')}>Staked #12</h6>
         <h6 className={staking=='unstake'?'unstake selected':'unstake'} onClick={()=>setStaking('unstake')}>UnStaked #3</h6>
       </div>
