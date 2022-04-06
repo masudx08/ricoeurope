@@ -1,0 +1,26 @@
+.breedResultCont{
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../assets/img/Prison/prison2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+
+.breedResultCont .mycard{
+  max-height: 350px;
+  max-width: 400px;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--secondary-color);
+  margin: auto;
+  border-radius: 5px;
+  position: relative;
+  padding-top: 20px;
+}
+.breedResultCont .mybtn{
+  max-width: 400px;
+  width: 100vw;
+}
