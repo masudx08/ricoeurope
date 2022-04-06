@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Mint from './pages/Mint/Mint';
 import MintResult from './components/MintResult/MintResult';
 import Staking from './pages/Staking/Staking';
+import Swag from './pages/Swag/Swag';
 export const MyContext = React.createContext()
 function App() {
 const [staking, setStaking] = useState('stake')
@@ -19,6 +20,7 @@ const defaultValue={
           <Route path="/mint" element={<Mint />} />
           <Route path="/mintresult" element={<MintResult />} />
           <Route path="/staking" element={<Staking />} />
+          <Route path="/swag" element={<Swag />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
