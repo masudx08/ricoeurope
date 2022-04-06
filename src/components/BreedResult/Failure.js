@@ -1,6 +1,5 @@
 import React from 'react'
 import './breedresult.css'
-import BabyMamaImg from '../../assets/img/Characters/png/babymama.png'
 export default function Failure() {
   return (
     <div className='breedResultCont'>

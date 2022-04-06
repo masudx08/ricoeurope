@@ -12,6 +12,12 @@ import Jail from './pages/Jail/Jail';
 import BabyMama from './components/BreedResult/BabyMama';
 import BabyThief from './components/BreedResult/BabyThief';
 import Failure from './components/BreedResult/Failure';
+import Guard from './components/BreedResult/Guard';
+import Leader from './components/BreedResult/Leader';
+import Member from './components/BreedResult/Member';
+import Police from './components/BreedResult/Police';
+import Spy from './components/BreedResult/Spy';
+import Thief from './components/BreedResult/Thief';
 export const MyContext = React.createContext()
 function App() {
 const [staking, setStaking] = useState('stake')
@@ -32,12 +38,12 @@ const defaultValue={
           <Route path="/b/babymama" element={<BabyMama />} />
           <Route path="/b/babythief" element={<BabyThief />} />
           <Route path="/b/failure" element={<Failure />} />
-          <Route path="/b/guard" element={<BabyMama />} />
-          <Route path="/b/leader" element={<BabyMama />} />
-          <Route path="/b/member" element={<BabyMama />} />
-          <Route path="/b/police" element={<BabyMama />} />
-          <Route path="/b/spy" element={<BabyMama />} />
-          <Route path="/b/thief" element={<BabyMama />} />
+          <Route path="/b/guard" element={<Guard />} />
+          <Route path="/b/leader" element={<Leader />} />
+          <Route path="/b/member" element={<Member />} />
+          <Route path="/b/police" element={<Police />} />
+          <Route path="/b/spy" element={<Spy />} />
+          <Route path="/b/thief" element={<Thief />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
