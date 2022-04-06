@@ -1,0 +1,56 @@
+.jailCont{
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../assets/img/Prison/prison2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+.jailCont .my_card{
+  text-align: left;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius: 10px;
+  max-width: 550px;
+}
+
+.jailCont .my_card .imgCont{
+  height: 150px;
+}
+.jailCont .my_card img{
+  height: 80%;
+}
+.jailCont .my_card .yellow-square {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+}
+.jailCont .my_card .yellow-square .apply{
+  height: 45px;
+  width: 60px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  color: var(--secondary-color);
+  font-family: Gilroy;
+  font-weight: 800;
+}
+.jailCont .my_card .special{
+  text-align: center;
+}
+.jailCont .my_card .special p{
+  margin-bottom: 0;
+  font-size: 15px;
+}
+.jailCont .my_card .special button{
+  padding: 2px 25px;
+  font-weight: 500;
+  font-size: 14px;
+}

@@ -8,6 +8,7 @@ import MintResult from './components/MintResult/MintResult';
 import Staking from './pages/Staking/Staking';
 import Swag from './pages/Swag/Swag';
 import Breeding from './pages/Breeding/Breeding';
+import Jail from './pages/Jail/Jail';
 export const MyContext = React.createContext()
 function App() {
 const [staking, setStaking] = useState('stake')
@@ -23,6 +24,7 @@ const defaultValue={
           <Route path="/staking" element={<Staking />} />
           <Route path="/swag" element={<Swag />} />
           <Route path="/breed" element={<Breeding />} />
+          <Route path="/jail" element={<Jail />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>

@@ -8,10 +8,7 @@ export default function Home() {
       <Link to='/staking'>Staking</Link> <br />
       <Link to='/swag'>Swag</Link> <br />
       <Link to='/breed'>Breed</Link> <br />
-      <Link to='/gangs'>Gangs</Link> <br />
-      <Link to='/store'>Store</Link> <br />
-      <Link to='/map'>Map</Link> <br />
-      <Link to='/swap'>Swap</Link> <br />
+      <Link to='/jail'>Jail</Link> <br />
     </div>
   )
 }
