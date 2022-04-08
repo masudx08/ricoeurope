@@ -3,7 +3,7 @@ import LeaderImg from '../../assets/img/Characters/png/gang_leader_m.png'
 import './mintresult.css'
 import { BsArrowRight } from 'react-icons/bs'
 export default function MintResult() {
-  const [result, setResult] = useState('failure')
+  const [result, setResult] = useState('success')
   return (
     <div className='resultCont'>
       <div className='innerContainer'>

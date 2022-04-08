@@ -1,0 +1,50 @@
+.mynavContainer .navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.mynavContainer .logoImg {
+  height: 70px
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../../assets/img/Icon/menu.svg)
+}
+
+.nav_icon {
+  background: var(--primary-color);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding: 8px 9px;
+  margin: 0 10px;
+}
+
+.nav_button {
+  border: none;
+  outline: none;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 30px;
+  background: none;
+  padding: 0px 10px;
+  font-size: 14px;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+  .mynavContainer .container{
+    width: 95%;
+  }
+  .nav_button{
+    width: 150px;
+    margin-top: 20px;
+    padding:  4px 
+  }
+}
+@media screen and (min-width: 993px) {
+  .nav-right {
+    flex: none
+  }
+}
