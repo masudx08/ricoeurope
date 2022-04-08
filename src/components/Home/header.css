@@ -5,3 +5,19 @@
   color: white;
   min-height: 100vh;
 }
+
+.headerContainer .playbtn{
+  border: none;
+  outline: none;
+  background: none;
+  border: 1px  solid var(--primary-color);
+  color:  var(--primary-color);
+  border-radius: 30px;
+  padding: 5px  15px
+}
+
+@media screen and (min-width: 993px) {
+  .headerContainer h1{
+    font-size:  73px
+  }
+}
