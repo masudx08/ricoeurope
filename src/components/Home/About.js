@@ -46,7 +46,7 @@ export default function About() {
 
 
         <Row>
-          <Col>
+          <Col md={6}>
             <h2 className='highlight-text'>What is Gangs of the Meta ?</h2>
             <p className='mt-4'>
               Gangs-of-the-meta is an NFT P2E (Non Fungible Token ) (Play 2 Earn) game built on the avalanche block-chain.
@@ -61,7 +61,7 @@ export default function About() {
             </p>
             <button className='outline_round_btn'>Learn More</button>
           </Col>
-          <Col className='d-flex'>
+          <Col md={6} className='d-flex'>
             <div >
               <img className='about_babyImg' src={BabyMama} alt="" />
             </div>
