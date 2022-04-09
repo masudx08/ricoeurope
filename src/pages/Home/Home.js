@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import About from '../../components/Home/About'
 import Header from '../../components/Home/Header'
 export default function Home() {
   return (
     <div>
       <Header />
+      <About />
     </div>
   )
 }

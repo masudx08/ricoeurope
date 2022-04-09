@@ -9,7 +9,7 @@ export default function Header() {
       <MyNav />
         <div className="container">
       <Row >
-        <Col md={6} className='mt-5'>
+        <Col md={6} className='mt-5 pt-3'>
           <h1 className="highlight-text">
             Gang of the Meta
           </h1>
