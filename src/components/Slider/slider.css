@@ -1,0 +1,59 @@
+.carouselCont {
+  width: 80%;
+  margin: auto;
+  padding: 0 30px;
+  position: relative
+}
+
+.carouselCont .prev__btn {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.carouselCont .next__btn {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.carouselCont .prev__btn, .carouselCont .next__btn{
+  cursor: pointer
+}
+.carouselCont .prev__btn svg, .carouselCont .next__btn svg{
+  font-size: 30px;
+  color: gray;
+}
+.carouselCont .item {
+  background-color: var(--light-secondary);
+  color: white;
+  height: 100%;
+  padding: 10px 15px;
+  margin: 0 15px;
+  border-radius: 5px;
+}
+
+.carouselCont .item__title {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.carouselCont .item__title::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  height: 1px;
+  width: 50%;
+  background: linear-gradient(to right, #fdc110, #1f1e1e);
+}
+
+
+/* Modified  */
+.react-multiple-carousel__arrow--left,
+.react-multiple-carousel__arrow--right {
+  display: none;
+}
