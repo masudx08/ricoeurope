@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import About from '../../components/Home/About'
+import Attack from '../../components/Home/Attack'
 import Header from '../../components/Home/Header'
 import Slider from '../../components/Slider/Slider'
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <div style={{padding: '50px 0', background:'#1d1c1c'}}>
         <Slider />
       </div>
+      <Attack />
     </div>
   )
 }

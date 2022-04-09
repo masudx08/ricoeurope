@@ -1,0 +1,25 @@
+.attackCont{
+  background-color: var(--light-secondary);
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.attackCont .items_1, .attackCont .items_2{
+  display: flex;
+  width: 110%;
+  column-gap: 15px;
+}
+.attackCont .items_1 .item, .attackCont .items_2 .item{
+  border-radius: 5px;
+  flex-grow: 1;
+}
+
+.attackCont .myvideo{
+  margin-top: 50px;
+  width: 55vw;
+  height: 30vw;
+  border-radius: 20px;
+  border: 1px solid var(--primary-color);
+}
