@@ -22,4 +22,7 @@
   height: 30vw;
   border-radius: 20px;
   border: 1px solid var(--primary-color);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../assets/img/Prison/prison2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
