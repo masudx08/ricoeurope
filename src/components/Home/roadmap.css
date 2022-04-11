@@ -35,3 +35,99 @@
   margin-right: 10px;
   font-size: 10px;
 }
+
+.roadmapCont .firstSection, .roadmapCont .thirdSection{
+  border-left: 1px dotted gray;
+  padding-left: 30px;
+  position: relative;
+}
+
+.roadmapCont .firstSection::before, .roadmapCont .thirdSection::before{
+  content:'';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background:  green;
+  border: 3px solid white;
+  top: 0;
+  left: -10px;
+  border-radius: 20px;
+}
+
+.roadmapCont .secondSection{
+  border-right: 1px dotted gray;
+  padding-right: 14px;
+  position: relative;
+
+}
+.roadmapCont .secondSection::before{
+  content:'';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background:  var(--primary-color);
+  border: 3px solid white;
+  top: 5px;
+  right: -10px;
+  border-radius: 20px;
+}
+
+.roadmapCont .secondSection .visibilitySection{
+  position: relative
+}
+.roadmapCont .secondSection .visibilitySection::before{
+  content:'';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background:  var(--primary-color);
+  border: 3px solid white;
+  top: 5px;
+  right: -25px;
+  border-radius: 20px;
+}
+
+.roadmapCont .thirdSection{
+  border-left: 1px dotted gray;
+  padding-left: 30px;
+  position: relative;
+}
+
+.roadmapCont .thirdSection::before{
+  background:  var(--primary-color);
+}
+
+.roadmapCont .thirdSection .futureSection{
+  position: relative
+}
+
+.roadmapCont .thirdSection .futureSection::before{
+  content:'';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background:  var(--primary-color);
+  border: 3px solid white;
+  top: 0;
+  left: -40px;
+  border-radius: 20px;
+}
+.roadmapCont .thirdSection::after{
+  content:'';
+  position: absolute;
+  height: 10px;
+  width: 20px;
+  background:  var(--primary-color);
+  border: 1px solid white;
+  border-radius: 3px;
+  bottom: 0;
+  left: -10px;
+}
+
+
+@media screen and  (max-width: 767px){
+  .roadmapCont .secondSectionRow{
+    flex-direction: column-reverse;
+  }
+ 
+}
