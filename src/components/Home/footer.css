@@ -1,9 +1,71 @@
 .footerCont{
   background-color: var(--light-secondary);
-  color: white;
-  padding: 50px 0
+  color: #8a8989;
+  padding-top: 50px
 }
 
 .footerCont .socialIcon{
   display: flex;
+  column-gap: 10px;
+}
+.footerCont .socialIcon img{
+  width:  40px;
+  height:  auto;
+}
+
+.footerCont .section2 input{
+  border: 1px solid var(--primary-color);
+  outline: none;
+  border-radius: 2px;
+  color: var(--primary-color);
+  background: none;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.footerCont .section2 svg{
+  color: var(--primary-color);
+  font-size: 30px;
+  margin-bottom: 4px;
+}
+
+.footerCont .section3 input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  color: var(--primary-color);
+  background: none;
+}
+.footerCont .section3 .poweredby {
+  display: flex;
+  margin-top: 20px;
+  width: 400px;
+  position: relative;
+}
+
+.footerCont .section3 svg{
+  color: var(--primary-color);
+  font-size: 25px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom:  0;
+  margin: auto;
+}
+
+.footer_foot{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-between;
+  border-top: 1px solid #8a8989;
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+.footerCont .topFooter{
+  margin-left: 10%;
+  margin-bottom: 20px;
 }
