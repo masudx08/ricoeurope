@@ -1,6 +1,9 @@
 .footerCont{
   background-color: var(--light-secondary);
   color: white;
-  text-align: center;
   padding: 50px 0
+}
+
+.footerCont .socialIcon{
+  display: flex;
 }
