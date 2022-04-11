@@ -20,6 +20,7 @@ import Spy from './components/BreedResult/Spy';
 import Thief from './components/BreedResult/Thief';
 import Twin from './components/BreedResult/Twin';
 import Triplet from './components/BreedResult/Triplet';
+import PageCheck from './pages/PageCheck/PageCheck';
 export const MyContext = React.createContext()
 function App() {
 const [staking, setStaking] = useState('stake')
@@ -30,6 +31,7 @@ const defaultValue={
     <MyContext.Provider value={defaultValue}>
       <BrowserRouter>
         <Routes>
+          <Route path="/pagecheck" element={<PageCheck />} />
           <Route path="/mint" element={<Mint />} />
           <Route path="/mintresult" element={<MintResult />} />
           <Route path="/staking" element={<Staking />} />
