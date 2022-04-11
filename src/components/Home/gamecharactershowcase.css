@@ -1,0 +1,32 @@
+.gameCharacterShowcase{
+  
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  background-color: rgb(50 50 50)
+}
+
+.gameCharacterShowcase .innerCont{
+  width: 90%;
+  margin: auto;
+}
+.gameCharacterShowcase .show img{
+  height: 100%;
+}
+.gameCharacterShowcase .show .showup{
+  background-image: url(../../assets/img/bg_up.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:300px;
+  width: auto;
+}
+.gameCharacterShowcase .show .showdown{
+  background-image: url(../../assets/img/bg_down.png);
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: -30px;
+  background-repeat: no-repeat;
+  height:300px;
+  width: auto;
+}
