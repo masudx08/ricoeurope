@@ -1,0 +1,30 @@
+.showcaseCont{
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 50px 0
+}
+.showcaseCont .innerCont{
+  width: 90%;
+  margin: auto;
+}
+.showcaseCont .show img{
+  height: 100%;
+}
+.showcaseCont .show .showup{
+  background-image: url(../../assets/img/bg_up.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:300px;
+  width: auto;
+}
+.showcaseCont .show .showdown{
+  background-image: url(../../assets/img/bg_down.png);
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: -30px;
+  background-repeat: no-repeat;
+  height:300px;
+  width: auto;
+}

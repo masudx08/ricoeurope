@@ -12,3 +12,26 @@
   height: 400px;
   float: left;
 }
+.roadmapCont .secondSection {
+  text-align: right;
+  
+}
+.roadmapCont .secondSection p::after{
+  content:'   ●';
+  color: var(--primary-color);
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+.roadmapCont .firstSection p::before{
+  content:'   ●';
+  color: #248b1d;
+  margin-right: 10px;
+  font-size: 10px;
+}
+.roadmapCont .thirdSection p::before{
+  content:'   ●';
+  color: var(--primary-color);
+  margin-right: 10px;
+  font-size: 10px;
+}

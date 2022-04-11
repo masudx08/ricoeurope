@@ -16,7 +16,7 @@ export default function Roadmap() {
               <img src={LeaderM} alt="" />
             </div>
           </Col>
-          <Col md={6}>
+          <Col md={6} className='firstSection'>
             <h4>The Details</h4>
             <p>
               Reveal the project details, and a first look at our NFT gaming concept.</p>
@@ -45,7 +45,7 @@ export default function Roadmap() {
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col className='secondSection'>
             <h4>The Action</h4>
             <p>
               Listing our native tokens on Coin Market Cap and Coin Gecko.
@@ -76,7 +76,7 @@ export default function Roadmap() {
               <img src={LeaderF} alt="" />
             </div>
           </Col>
-          <Col>
+          <Col className='thirdSection'>
             <h4>The Growth</h4>
             <p>Release cartel wars game mode.</p>
             <p>Release of our internal marketplace. </p>

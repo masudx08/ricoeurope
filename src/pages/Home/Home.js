@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom'
 import About from '../../components/Home/About'
 import Assets from '../../components/Home/Assets'
 import Attack from '../../components/Home/Attack'
+import Footer from '../../components/Home/Footer'
 import Header from '../../components/Home/Header'
 import Roadmap from '../../components/Home/Roadmap'
+import Showcase from '../../components/Home/Showcase'
 import Slider from '../../components/Slider/Slider'
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       <Attack />
       <Assets />
       <Roadmap />
+      <Showcase />
+      <Footer />
     </div>
   )
 }
