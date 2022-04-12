@@ -1,0 +1,75 @@
+.mapCont{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../assets/img/Prison/prison2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+.mapCont p{
+  margin-bottom: 0;
+}
+.rowCont{
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: center;
+  
+}
+.mapCont .leftbox{
+  background-color: var(--secondary-color);
+  width:  35vw;
+  max-height: 632px;
+  max-width: 540px;
+  color: white;
+  overflow: hidden;
+  padding: 15px;
+  border-radius: 5px;
+  min-height: 46%;
+}
+.mapCont .rightbox .section1, .mapCont .rightbox .section2{
+  background-color: var(--secondary-color);
+  width:  35vw;
+  max-height: 632px;
+  max-width: 370px;
+  color: white;
+  overflow: hidden;
+  padding: 15px;
+  border-radius: 5px;
+  min-height: 47%;
+}
+.mapCont .leftbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mapCont .rightbox p{
+  font-weight: 800;
+  text-align: left;
+  color: var(--primary-color)
+}
+.mapCont .rightbox .section2{
+  margin-top: 20px;
+}
+
+.mapCont .next_prev{
+  display: flex;
+  align-items: center;
+}
+.mapCont .next_prev > div{
+  display: flex;
+  align-items: center;
+  margin: 0 10px
+} 
+.mapCont .next_prev .arrow{
+  background-color: var(--secondary-color);
+  margin: 0 10px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.mapCont .arrowdown{
+  transform: rotate(90deg);
+}
