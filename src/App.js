@@ -24,6 +24,7 @@ import PageCheck from './pages/PageCheck/PageCheck';
 import SwagSuccess from './components/BreedResult/SwagSuccess';
 import ChangeName from './components/BreedResult/ChangeName';
 import LeaderBoard from './pages/LeaderBoard/LeaderBoard';
+import NftView from './pages/NftView/NftView';
 export const MyContext = React.createContext()
 function App() {
 const [staking, setStaking] = useState('stake')
@@ -60,6 +61,7 @@ const defaultValue={
           <Route path="/swagsuccess" element={<SwagSuccess />} /> 
           <Route path="/changename" element={<ChangeName />} />
           <Route path="/leaderboard" element={<LeaderBoard />} />
+          <Route path="/nftview" element={<NftView />} />
 
 
 

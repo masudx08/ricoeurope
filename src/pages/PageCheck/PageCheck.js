@@ -10,6 +10,7 @@ export default function PageCheck() {
       <Link to='/swagsuccess'> Swag  Success</Link> <br/>
       <Link to='/changename'> Change Name</Link> <br />
       <Link to='/leaderboard'> Leader Gl and Cartel</Link> <br />
+      <Link to='/nftview'>Nft View</Link> <br />
 
     </div>
   )
