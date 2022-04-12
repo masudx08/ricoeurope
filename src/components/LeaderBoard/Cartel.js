@@ -9,11 +9,6 @@ export default function Cartel() {
   const ranks = [
     {
       rank: 1,
-      name: 'Misses',
-      level: 5,
-      perday: 500,
-      ownedby: '0xb7...90b70',
-      img: Babymama
     },
     { rank: 2 },
     { rank: 3 },
@@ -36,32 +31,26 @@ export default function Cartel() {
         <h6 onClick={() => setLeaderboard('leader')} >Leader</h6>
         <h6 onClick={() => setLeaderboard('cartel')} className='selected'>Cartel</h6>
       </div>
-      <div className='inputArea'>
+      {/* <div className='inputArea'>
         <input type="text" placeholder='Enter leader id or name' />
         <button className="mybtn mybtn-p">Search</button>
+      </div> */}
+      <div className='cartle__lefttitle'>
+        <p className='mb-0'>My Cartel</p>
       </div>
-      <div className='lefttitle'>
-        <p className='mb-0'>My Gang Leader</p>
-      </div>
-      <div className='found_section'>
-        <div className='arrow'>
-          <IoIosArrowBack />
-        </div>
-        <div>
-          No Leader found
-        </div>
-        <div className='arrow'>
-          <IoIosArrowForward />
-        </div>
-      </div>
+      <p style={{marginTop:'70px', textAlign:'left', marginLeft:'10px'}}>RANK: --</p>
+      {/* <div ></div> */}
       <div>
 
 
-        <div className="rankContainer">
+        <div className="rankContainer rankContainer2">
           <Row className='rankItemHeader'>
             <Col><p className='mb-0'>RANK</p></Col>
-            <Col><p className='mb-0'>NAME</p></Col>
-            <Col><p className='mb-0'>LEVEL</p></Col>
+            <Col><p className='mb-0'>CARTEL NAME</p></Col>
+            <Col><p className='mb-0'>GANG LEADERS</p></Col>
+            <Col><p className='mb-0'>MEMBERS</p></Col>
+            <Col><p className='mb-0'>POINTS</p></Col>
+            <Col><p className='mb-0'>STARS</p></Col>
             <Col><p className='mb-0'>EST.DLZ PER DAY</p></Col>
             <Col><p className='mb-0'>OWNED BY</p></Col>
           </Row>
@@ -71,12 +60,13 @@ export default function Cartel() {
                 <Row key={index} className='rankItem'>
                   <Col><p>{item.rank || ''}</p></Col>
                   <Col className='d-flex align-items-center'>
-                    {
-                      item.img && <img style={{ width: '70px', height: '70px' }} src={item.img} alt="" />
-                    }
                     <p>{item.name || ''}</p>
                   </Col>
-                  <Col><p>{item.level || ''}</p></Col>
+                  <Col><p>{item.leader || ''}</p></Col>
+                  <Col><p>{item.member || ''}</p></Col>
+                  <Col><p>{item.point || ''}</p></Col>
+                  <Col><p>{item.star || ''}</p></Col>
+                  <Col><p>{item.point || ''}</p></Col>
                   <Col><p>{item.perday || ''}</p></Col>
                   <Col><p>{item.ownedby || ''}</p></Col>
                 </Row>

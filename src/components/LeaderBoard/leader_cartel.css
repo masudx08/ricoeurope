@@ -106,3 +106,23 @@
   min-width: 800px;
   --bs-gutter-x: 0;
 }
+
+
+
+ /* cartel   */
+ .rankContainer2 .rankItem{
+   height: 50px
+ }
+ .rankContainer2 .rankItem p{
+   margin-bottom: 0;
+ }
+
+ .leadcartelCont .cartle__lefttitle{
+  float: left;
+  background: var(--secondary-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+  min-width: 200px;;
+  text-align: left;
+ }
