@@ -27,8 +27,10 @@ import LeaderBoard from './pages/LeaderBoard/LeaderBoard';
 export const MyContext = React.createContext()
 function App() {
 const [staking, setStaking] = useState('stake')
+const [leaderboard, setLeaderboard] = useState('leader')
 const defaultValue={
-  staking, setStaking
+  staking, setStaking,
+  leaderboard,  setLeaderboard
 }
   return (
     <MyContext.Provider value={defaultValue}>

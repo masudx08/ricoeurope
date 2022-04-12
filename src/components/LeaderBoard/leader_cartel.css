@@ -76,8 +76,31 @@
   padding: 10px 0;
 }
 
+.leadcartelCont .selected{
+  border-bottom: 2px solid var(--primary-color);
+}
 
+.leadcartelCont .mypagination{
+  max-width: 400px;
+  margin: auto;
+  background: #2a2c54;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-top: 30px;
+  border-radius: 2px;
+}
 
+.leadcartelCont .mypagination .page-item{
+  width: 25%;
+}
+.leadcartelCont .mypagination .page-link{
+  background-color: #3b3d76;
+  color:  white;
+  border: 1px solid  #6f6f70
+}
 /* custom  */
 .rankContainer .row{
   min-width: 800px;

@@ -4,7 +4,7 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { Col, Pagination, Row, Table } from 'react-bootstrap'
 import Babymama from '../../assets/img/Characters/png/babymama.png'
 import { MyContext } from '../../App'
-export default function Leader() {
+export default function Cartel() {
   const { leaderboard, setLeaderboard } = useContext(MyContext)
   const ranks = [
     {
@@ -33,8 +33,8 @@ export default function Leader() {
         <h2>LEADERBOARD</h2>
       </div>
       <div className='switcher'>
-        <h6 onClick={() => setLeaderboard('leader')} className='selected'>Leader</h6>
-        <h6 onClick={() => setLeaderboard('cartel')}>Cartel</h6>
+        <h6 onClick={() => setLeaderboard('leader')} >Leader</h6>
+        <h6 onClick={() => setLeaderboard('cartel')} className='selected'>Cartel</h6>
       </div>
       <div className='inputArea'>
         <input type="text" placeholder='Enter leader id or name' />
