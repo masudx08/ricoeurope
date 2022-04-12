@@ -23,6 +23,7 @@ import Triplet from './components/BreedResult/Triplet';
 import PageCheck from './pages/PageCheck/PageCheck';
 import SwagSuccess from './components/BreedResult/SwagSuccess';
 import ChangeName from './components/BreedResult/ChangeName';
+import LeaderBoard from './pages/LeaderBoard/LeaderBoard';
 export const MyContext = React.createContext()
 function App() {
 const [staking, setStaking] = useState('stake')
@@ -56,6 +57,10 @@ const defaultValue={
           {/* 2nd  Milestone  */}
           <Route path="/swagsuccess" element={<SwagSuccess />} /> 
           <Route path="/changename" element={<ChangeName />} />
+          <Route path="/leaderboard" element={<LeaderBoard />} />
+
+
+
           <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>

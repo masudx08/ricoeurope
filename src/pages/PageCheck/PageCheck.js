@@ -9,6 +9,7 @@ export default function PageCheck() {
       <p>2nd  Milestone</p>
       <Link to='/swagsuccess'> Swag  Success</Link> <br/>
       <Link to='/changename'> Change Name</Link> <br />
+      <Link to='/leaderboard'> Leader Gl and Cartel</Link> <br />
 
     </div>
   )

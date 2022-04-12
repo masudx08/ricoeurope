@@ -1,0 +1,85 @@
+.leadcartelCont .toptitle{
+  background:  var(--primary-color);
+  max-width: 50%;
+  border-radius: 10px 5px 10px 5px;
+  margin: auto;
+}
+
+.leadcartelCont .switcher{
+  display: flex;
+  column-gap: 10px;
+}
+.leadcartelCont .inputArea{
+  float: right;
+  position: inherit;
+}
+.leadcartelCont .inputArea input{
+  width: 300px;
+  padding: 7px 15px;
+  background:  var(--secondary-color);
+  color: white;
+}
+.leadcartelCont .inputArea input::placeholder{
+  color: white;
+}
+.leadcartelCont .inputArea button{
+  margin: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.leadcartelCont .lefttitle{
+  float: left;
+  background: var(--primary-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.leadcartelCont .found_section{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  background: var(--secondary-color);
+  margin-bottom: 20px;
+}
+.leadcartelCont .found_section .arrow{
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 30px;
+  cursor: pointer;
+  width: 30px;
+}
+
+.leadcartelCont .rankContainer{
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+.leadcartelCont .rankItem{
+  height:  100px;
+  background-color: var(--secondary-color);
+  margin-bottom: 5px;
+  border-radius: 4px;
+  align-items: center;
+  
+}
+.leadcartelCont .rankItem  div{
+  width: 200px
+}
+
+.leadcartelCont .rankItemHeader{
+  background: linear-gradient(to Bottom, black, var(--primary-color));
+  margin: 10px 0;
+  align-items: center;
+  padding: 10px 0;
+}
+
+
+
+/* custom  */
+.rankContainer .row{
+  min-width: 800px;
+  --bs-gutter-x: 0;
+}
