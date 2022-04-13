@@ -15,6 +15,7 @@ export default function PageCheck() {
       <Link to='/meet'>meet</Link> <br />
       <Link to='/swap'>swap</Link> <br />
       <Link to='/store'>Store</Link> <br />
+      <Link to='/vault'>Vault</Link> <br />
 
     </div>
   )

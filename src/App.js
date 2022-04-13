@@ -29,6 +29,7 @@ import Map from './pages/Map/Map';
 import Meet from './pages/Meet/Meet';
 import Swap from './pages/Swap/Swap';
 import Store from './pages/Store/Store';
+import Vault from './pages/Vaults/Vault';
 export const MyContext = React.createContext()
 function App() {
 const [staking, setStaking] = useState('stake')
@@ -70,6 +71,7 @@ const defaultValue={
           <Route path="/meet" element={<Meet />} />
           <Route path="/swap" element={<Swap />} />
           <Route path="/store" element={<Store />} />
+          <Route path="/vault" element={<Vault />} />
 
 
 
