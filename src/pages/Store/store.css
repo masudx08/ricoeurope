@@ -1,4 +1,4 @@
-.storeCont{
+.storeCont {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     url(../../assets/img/Prison/prison2.jpg);
   background-size: cover;
@@ -12,29 +12,77 @@
   display: flex;
   column-gap: 10px;
 }
-.storeCont .filterArea .selectedFilter{
+.storeCont .filterArea .selectedFilter {
   font-weight: 800;
 }
-.storeCont .mycol{
-  width:20%;
+.storeCont .mycol {
+  width: 20%;
 }
-.storeCont .imgPart{
+.storeCont .imgPart {
   height: 100%;
   max-height: 200px;
   background: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px
+  border-radius: 5px;
 }
-.storeCont .contentPart{
+.storeCont .contentPart {
   background: var(--secondary-color);
   margin-top: 10px;
   padding: 10px;
   height: 100%;
   max-height: 100px;
-  border-radius: 5px
+  border-radius: 5px;
 }
-.storeCont .contentPart p{
+.storeCont .contentPart p {
   margin-bottom: 0;
+}
+
+.storeCont .topInput {
+  padding: 5px 20px;
+  background: none;
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  color: white;
+}
+.storeCont .topInput::placeholder{
+  color: white
+}
+
+.storeCont .svgCont{
+  height: 25px;
+  width: 25px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto
+}
+.storeCont .bottomBtns{
+  margin-top:  20px;
+}
+.storeCont .bottomBtns .mybtn{
+  border-radius: 2px;
+  width: 100px;
+}
+.storeCont .bottomBtns .outlinebtn{
+  background: none;
+  border: 1px solid  lightgray;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 2px;
+  width: 100px;
+  margin: 0 5px
+}
+.storeCont .bottomBtns .notbtn{
+  color: var(--primary-color);
+  background: none;
+  margin: 0 5px;
+  font-weight: 700px;
 }
