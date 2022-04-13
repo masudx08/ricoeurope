@@ -27,6 +27,7 @@ import LeaderBoard from './pages/LeaderBoard/LeaderBoard';
 import NftView from './pages/NftView/NftView';
 import Map from './pages/Map/Map';
 import Meet from './pages/Meet/Meet';
+import Swap from './pages/Swap/Swap';
 export const MyContext = React.createContext()
 function App() {
 const [staking, setStaking] = useState('stake')
@@ -66,6 +67,7 @@ const defaultValue={
           <Route path="/nftview" element={<NftView />} />
           <Route path="/map" element={<Map />} />
           <Route path="/meet" element={<Meet />} />
+          <Route path="/swap" element={<Swap />} />
 
 
 

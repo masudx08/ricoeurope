@@ -1,0 +1,50 @@
+.swapCont {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url(../../assets/img/Prison/prison2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+  padding: 50px 0;
+  min-height: 100vh;
+}
+
+.swapCont h2 {
+  margin-bottom: 0;
+}
+.swapCont .showAmountCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.swapCont .showAmountCont div:nth-child(1) {
+  width: 60%;
+  max-width: 890px;
+  background-color: var(--secondary-color);
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.swapCont .btnCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+  width: 80%;
+  max-width: 400px;
+  margin: auto
+}
+
+
+.swapCont .section2{
+  margin-top: 50px;
+  border-top: 5px solid var(--primary-color);
+  padding-top: 50px;
+}
+
+.swapCont .titleBorder{
+  border-bottom: 5px solid var(--primary-color);
+  display: inline;
+}

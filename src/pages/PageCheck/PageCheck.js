@@ -13,6 +13,7 @@ export default function PageCheck() {
       <Link to='/nftview'>Nft View</Link> <br />
       <Link to='/map'>Map</Link> <br />
       <Link to='/meet'>meet</Link> <br />
+      <Link to='/swap'>swap</Link> <br />
 
     </div>
   )
