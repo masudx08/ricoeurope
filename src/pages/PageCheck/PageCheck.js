@@ -12,6 +12,7 @@ export default function PageCheck() {
       <Link to='/leaderboard'> Leader Gl and Cartel</Link> <br />
       <Link to='/nftview'>Nft View</Link> <br />
       <Link to='/map'>Map</Link> <br />
+      <Link to='/meet'>meet</Link> <br />
 
     </div>
   )

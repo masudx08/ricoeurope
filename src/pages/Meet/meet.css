@@ -1,0 +1,37 @@
+.meetCont{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../assets/img/Prison/prison2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+.meetCont .imgPart, .meetCont .contentPart{
+  background: var(--secondary-color);
+  height: 100%
+}
+.meetCont .imgPart{
+  max-width: 235px;
+  max-height: 512px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.meetCont .imgPart img{
+  height: 85%
+}
+.meetCont .contentPart{
+  max-width: 567px;
+  max-height: 512px;
+  border-radius: 5px;
+  padding: 10px
+}
+.meetCont .teamRow{
+  row-gap: 10px;
+}
+.meetCont .myContainer{
+  width: 50%;
+  margin: auto
+}
