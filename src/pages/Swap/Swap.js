@@ -7,7 +7,7 @@ export default function Swap() {
       <div className="container">
       <div className="section1">
         <h2 className='titleBorder'>$DLZ STAKING</h2>
-        <div className='text-end'>
+        <div className='text-end mt-4'>
           <h2>3678.000</h2>
           <p className='highlight-text'>DLZ HELD</p>
         </div>
@@ -45,7 +45,7 @@ export default function Swap() {
 
       <div className="section2">
         <h2 className='titleBorder'>CLAIM</h2>
-        <div className='text-end'>
+        <div className='text-end mt-4'>
           <h2>7895.0000</h2>
           <p className='highlight-text'>TOTAL GOTM HELD</p>
         </div>
