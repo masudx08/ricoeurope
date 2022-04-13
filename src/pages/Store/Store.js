@@ -1,79 +1,86 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./store.css";
-
+import Babymama from '../../assets/img/Characters/png/babymama.png'
+import Thief from '../../assets/img/Characters/png/thief.png'
+import Mansion from '../../assets/img/Characters/png/gang_leader_m.png'
+import Plot from '../../assets/img/Characters/png/member.png'
+import Police from '../../assets/img/Characters/png/police.png'
+import Coin from '../../assets/img/Icon/coin.png'
 export default function Store() {
   const datas = [
     {
-      img: "",
+      img: Babymama,
       name: "Baby mama",
       id: 101,
       breedCount: 3,
       amount: 5.49,
     },
     {
-      img: "",
+      img: Thief,
       name: "Thief",
       id: 878,
       level: 8,
       amount: 3.3,
     },
     {
-      img: "",
+      img: Mansion,
       name: "Mansion",
       id: 878,
-      accomodation: "",
+      accomodation: " ",
       amount: 3.3,
     },
     {
-      img: "",
+      img: Plot,
       name: "Plot",
       id: 889,
-      makeover: "",
+      makeover: " ",
       amount: 3.3,
     },
     {
-      img: "",
-      name: "Thief",
+      img: Police,
+      name: "Police",
       id: 878,
       level: 8,
       amount: 3.3,
     },
+    
     {
-      img: "",
+      img: Babymama,
       name: "Baby mama",
       id: 101,
       breedCount: 3,
       amount: 5.49,
     },
     {
-      img: "",
+      img: Thief,
       name: "Thief",
       id: 878,
       level: 8,
       amount: 3.3,
     },
     {
-      img: "",
+      img: Mansion,
       name: "Mansion",
       id: 878,
-      accomodation: "",
+      accomodation: " ",
       amount: 3.3,
     },
     {
-      img: "",
+      img: Plot,
       name: "Plot",
       id: 889,
-      makeover: "",
+      makeover: " ",
       amount: 3.3,
     },
     {
-      img: "",
-      name: "Thief",
+      img: Police,
+      name: "Police",
       id: 878,
       level: 8,
       amount: 3.3,
     },
+    
   ];
   return (
     <div className="storeCont">
@@ -83,12 +90,14 @@ export default function Store() {
             <h1>STORE</h1>
           </Col>
           <Col>
-            <p>Search Land Plot No Make Offer</p>
+           <div className='text-end'>
+           <p>Search Land Plot No Make Offer</p>
             <input type="text" placeholder="889" />
+           </div>
           </Col>
         </Row>
-        <div className="d-flex">
-          <p>Filter</p>
+        <div className=" filterArea">
+          <p className="selectedFilter">Filter</p>
           <p>Type</p>
           <p>Level</p>
           <p>City</p>
@@ -97,26 +106,29 @@ export default function Store() {
           <p>Defence</p>
           <p>Travel</p>
           <p>Luxury</p>
-          <p>Sort By</p>
+          <p className="selectedFilter">Sort By</p>
         </div>
         <div>
-          <Row>
+          <Row style={{rowGap:'50px',  margin:'auto'}}>
             {
               datas.map((data, index)=>{
                 return (
-                  <Col md={2} key={index}>
-                    <div>
-                      <img src="" alt="" />
+                  <Col className='mycol' md={2} key={index}>
+                    <div className='imgPart'>
+                      <img src={data.img} alt="" />
                     </div>
-                    <div>
+                    <div className='contentPart'>
                       <p>{data.name} {data.id && `#${data.id}`}</p>
-                      <p>
+                      <p style={{fontSize:'15px'}}>
                         {data.breedCount && `Breed Count : ${data.breedCount}`}
                         {data.level && `Level : ${data.level}`}
                         {data.accomodation && `Accomodation : ${data.accomodation}`}
                         {data.makeover && `Make Over : ${data.makeover}`}
                       </p>
-                      <p>{data.amount}</p>
+                      <div className='d-flex align-items-center' style={{fontSize:'15px'}}>
+                        <img  style={{height:'18px',  marginRight:'5px'}} src={Coin} alt="" />
+                        <p>{data.amount}</p>
+                      </div>
                     </div>
                   </Col>
                 )
