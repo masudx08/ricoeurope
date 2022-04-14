@@ -1,10 +1,141 @@
-.swag8Cont{
+.swag8Cont {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     url(../../assets/img/Prison/prison2.jpg);
   background-size: cover;
   background-position: center;
   color: white;
-  min-height: 100vh;
   padding: 50px 0;
   text-align: center;
+}
+.swag8Cont p {
+  margin-bottom: 0;
+}
+.swag8Cont .leftSection,
+.swag8Cont .rightSection {
+  background-color: var(--dark-secondary);
+  padding: 0 20px;
+}
+
+.swag8Cont .leftSection .imgCont {
+  background: var(--secondary-color);
+  margin: 20px 0;
+  padding: 30px;
+  border-radius: 5px;
+}
+.swag8Cont .leftSection .second_section{
+  text-align: start;
+  margin: 20px 0;
+  background: var(--secondary-color);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.swag8Cont .leftSection .third_section  .img_bg{
+  background-color: var(--secondary-color);
+  padding: 5px;
+    border-radius: 4px;
+
+}
+
+.swag8Cont  button{
+  color: var(--secondary-color);
+  width: 90px;
+  text-align: center;
+  font-weight: 700;
+  padding: 3px 0;
+  border-radius: 3px;
+  border: none;
+  outline:  none;
+  margin: 0 4px;
+}
+.swag8Cont .outline-btn{
+  background: none;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  font-weight: 500;
+  color: white;
+  font-family: 'Gilroy', sans-serif;
+}
+.swag8Cont .yellow-btn{
+  background: var(--primary-color);
+}
+.swag8Cont .green-btn{
+  background: var(--green-color);
+}
+
+
+.swag8Cont .rightSection{
+  background-color: var(--dark-secondary);
+  padding: 20px
+}
+.swag8Cont .rightSection .img_bg img{
+  height: 80%;
+  
+}
+.swag8Cont .rightSection .img_bg{
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+.swag8Cont .rightSection .content_section{
+  background: var(--secondary-color);
+  margin-top: 4px;
+  margin-bottom: 20px;
+  padding: 5px 0;
+}
+.swag8Cont .rightSection h5{
+  font-size: 17px
+}
+.swag8Cont .rightSection p{
+  font-size: 15px;
+}
+.swag8Cont .rightSection .section_one{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.swag8Cont .rightSection .section_one input{
+  background: none;
+  border: 1px solid var(--secondary-color);
+  padding: 4px 10px;
+  border-radius: 30px;
+}
+
+.swag8Cont .topCont{
+  width: 80%;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.swag8Cont .topCont .walletPart{
+  display: flex;
+}
+.swag8Cont .topCont .walletPart svg{
+  font-size: 50px;
+  margin-right: 10px;
+  color: var(--primary-color)
+}
+.swag8Cont .topCont .walletPart .amount{
+  border: 1px solid var(--light-secondary);
+  border-radius: 5px;
+}
+.swag8Cont .topCont .arrow svg{
+  font-size: 22px;
+  
+}
+.swag8Cont .topCont .arrow{
+  background: var(--secondary-color);
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  column-gap: 10px;
 }
