@@ -32,14 +32,17 @@ import Store from './pages/Store/Store';
 import Vault from './pages/Vaults/Vault';
 import Swag8 from './pages/Swag8/Swag8';
 import Land from './pages/Land/Land';
+import Advertise from './pages/Advertise/Advertise';
 
 export const MyContext = React.createContext()
 function App() {
 const [staking, setStaking] = useState('stake')
 const [leaderboard, setLeaderboard] = useState('leader')
+const [advertise, setAdvertise] = useState('billboard')
 const defaultValue={
   staking, setStaking,
-  leaderboard,  setLeaderboard
+  leaderboard,  setLeaderboard,
+  advertise, setAdvertise
 }
   return (
     <MyContext.Provider value={defaultValue}>
@@ -77,6 +80,7 @@ const defaultValue={
           <Route path="/vault" element={<Vault />} />
           <Route path="/swag8" element={<Swag8 />} />
           <Route path="/land" element={<Land />} />
+          <Route path="/advertise" element={<Advertise />} />
 
 
 

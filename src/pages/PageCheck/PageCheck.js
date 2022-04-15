@@ -18,7 +18,7 @@ export default function PageCheck() {
       <Link to='/vault'>Vault</Link> <br />
       <Link to='/swag8'>Swag8</Link> <br />
       <Link to='/land'>My Land</Link> <br />
-
+      <Link to='/advertise'>Advertise</Link> <br />
     </div>
   )
 }
