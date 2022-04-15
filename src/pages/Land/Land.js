@@ -10,8 +10,8 @@ export default function Land() {
   return (
     <div className="landCont">
       <div className="container">
-        <div className='d-flex justify-content-between'>
-          <div >
+        <Row className='d-flex justify-content-between mb-3'>
+          <Col md={6} >
             <h1 className='text-start mb-3'>My Lands</h1>
             <div className='topSection'>
               <p>01/05</p>
@@ -20,11 +20,11 @@ export default function Land() {
               <p>City: MetaCityName1</p>
               <button className="yellow-btn">View</button>
             </div>
-          </div>
-          <div>
+          </Col>
+          <Col md={6}>
             <img src={LandImg} alt="" />
-          </div>
-        </div>
+          </Col>
+        </Row>
         <div className="mysection">
           <Row>
             <Col md={6}>
@@ -135,17 +135,17 @@ export default function Land() {
             </Col>
           </Row>
         </div>
-        <div className='d-flex justify-content-between'>
-          <div>
+        <Row className='d-flex justify-content-between'>
+          <Col md={6} className='text-start'>
             <button className='yellow-btn'>Select</button>
             <button className='yellow-btn'>Remove</button>
             <button className='green-btn'>Save</button>
-          </div>
-          <div>
+          </Col>
+          <Col md={6} className='text-end'>
             <button className='yellow-btn'>Select</button>
             <button className='yellow-btn' style={{width: '180px'}}>Add To Land</button>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </div>
     </div>
   );
