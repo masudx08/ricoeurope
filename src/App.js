@@ -31,6 +31,8 @@ import Swap from './pages/Swap/Swap';
 import Store from './pages/Store/Store';
 import Vault from './pages/Vaults/Vault';
 import Swag8 from './pages/Swag8/Swag8';
+import Land from './pages/Land/Land';
+
 export const MyContext = React.createContext()
 function App() {
 const [staking, setStaking] = useState('stake')
@@ -74,6 +76,7 @@ const defaultValue={
           <Route path="/store" element={<Store />} />
           <Route path="/vault" element={<Vault />} />
           <Route path="/swag8" element={<Swag8 />} />
+          <Route path="/land" element={<Land />} />
 
 
 

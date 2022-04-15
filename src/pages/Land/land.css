@@ -1,0 +1,84 @@
+.landCont{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../assets/img/Prison/prison2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 50px  0;
+}
+
+.landCont p{margin-bottom: 0;}
+.landCont .mysection{
+  background: var(--dark-secondary);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.landCont .mysection .imgCont{
+  height: 150px;
+  width: 140px;
+  background: var(--light-secondary);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.landCont .mysection .imgCont img{
+  height: 80%;
+  width: auto;
+  padding:  10px
+}
+
+
+.landCont  button{
+  color: var(--secondary-color);
+  width: 90px;
+  text-align: center;
+  font-weight: 700;
+  padding: 3px 0;
+  border-radius: 3px;
+  border: none;
+  outline:  none;
+  margin: 0 4px;
+}
+.landCont .outline-btn{
+  background: none;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  font-weight: 500;
+  color: white;
+  font-family: 'Gilroy', sans-serif;
+}
+.landCont .yellow-btn{
+  background: var(--primary-color);
+}
+.landCont .green-btn{
+  background: var(--green-color);
+}
+
+.landCont .topSection{
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.landCont .topSection .arrow{
+  height: 30px;
+  width: 30px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px
+  
+}
+
+.landCont .topSection  .plot{
+  font-weight: 700;
+  color: #675df4
+}
