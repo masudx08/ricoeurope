@@ -53,7 +53,7 @@
 
 
 /* Modified  */
-.react-multiple-carousel__arrow--left,
-.react-multiple-carousel__arrow--right {
+.carouselCont .react-multiple-carousel__arrow--left,
+.carouselCont .react-multiple-carousel__arrow--right {
   display: none;
 }

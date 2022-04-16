@@ -4,6 +4,7 @@ import "./advertise.css";
 import { IoMdWallet } from "react-icons/io";
 import { MyContext } from "../../App";
 import Billboard from "../../components/Advertise/Billboard";
+import Clothing from "../../components/Advertise/Clothing";
 export default function Advertise() {
   const { advertise, setAdvertise } = useContext(MyContext);
   return (
@@ -39,7 +40,14 @@ export default function Advertise() {
         </Row>
 
         {/* Bill board and  clothing here  */}
-        <Billboard />
+        
+
+        {
+          advertise === "billboard" &&  <Billboard />
+        }
+        {
+          advertise === "clothing" &&  <Clothing />
+        }
       </div>
     </div>
   );

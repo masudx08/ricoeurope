@@ -1,0 +1,71 @@
+.clothingCont{
+  text-align: start;
+}
+
+ .clothingCarousel .myslider{
+  text-align: center;
+  margin: 0 10px;
+}
+ .clothingCarousel .myslider .imgCont{
+  height: 100%;
+  background-color: var(--secondary-color);
+  padding: 5px;
+  border-radius: 4px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clothingCarousel .myslider .imgCont img{
+  border-radius: 4px;
+}
+
+ .clothingCarousel .react-multiple-carousel__arrow--left,
+.clothingCarousel .react-multiple-carousel__arrow--right {
+  display: none;
+}
+.clothingCarousel{
+  position: relative
+}
+
+.clothingCarousel .prev__btn {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.clothingCarousel .next__btn {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.clothingCarousel .prev__btn, .clothingCarousel .next__btn{
+  cursor: pointer
+}
+.clothingCarousel .prev__btn svg, .clothingCarousel .next__btn svg{
+  font-size: 30px;
+  color: gray;
+}
+
+.clothingCarousel .reset_svg{
+  background: var(--light-secondary);
+  padding: 3px;
+  font-size: 25px;
+  border-radius: 50%;
+}
+.clothingCont .bottom{
+  row-gap: 20px;
+}
+.clothingCont .bottom .img_cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  padding: 20px
+}
