@@ -1,0 +1,84 @@
+.billboardCont{
+  text-align: start;
+}
+.billboardCont .item{
+  row-gap: 20px;
+  margin-bottom: 20px;
+}
+.billboardCont .item .imgCont{
+  background: var(--secondary-color);
+  min-height: 160px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.billboardCont .item .imgCont img{
+  width: 100%
+}
+.billboardCont .item .contentCont{
+  height:80px;
+  background: var(--secondary-color);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.billboardCont .bottomPart{
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  margin-top: 15px;
+
+}
+.billboardCont .bottomPart .bg{
+  background-color: var(--secondary-color);
+  padding: 5px 15px;
+  border-radius: 4px;
+  
+}
+
+.billboardCont .bottomPart h5{
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.billboardCont .arrow{
+  background-color: var(--secondary-color);
+  margin: 0 5px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.billboardCont input{
+  border: none;
+  outline: none;
+  background: none;
+  border: 1px solid  var(--secondary-color);
+  border-radius: 30px;
+  padding: 5px 10px;
+  color:  white;
+}
+.billboardCont input::placeholder{
+  color: white;
+}
+
+.billboardCont .inputContainer{
+  position: relative
+}
+.billboardCont .inputContainer .searchIcon{
+  position: absolute;
+  right: 25px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: var(--primary-color);
+  padding: 3px;
+  font-size: 20px;
+  border-radius: 50%;
+}

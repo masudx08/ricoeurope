@@ -3,6 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import "./advertise.css";
 import { IoMdWallet } from "react-icons/io";
 import { MyContext } from "../../App";
+import Billboard from "../../components/Advertise/Billboard";
 export default function Advertise() {
   const { advertise, setAdvertise } = useContext(MyContext);
   return (
@@ -38,7 +39,7 @@ export default function Advertise() {
         </Row>
 
         {/* Bill board and  clothing here  */}
-        
+        <Billboard />
       </div>
     </div>
   );
