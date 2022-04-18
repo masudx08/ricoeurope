@@ -12,13 +12,14 @@ export default function PageCheck() {
       <Link to='/leaderboard'> Leader Gl and Cartel</Link> <br />
       <Link to='/nftview'>Nft View</Link> <br />
       <Link to='/map'>Map</Link> <br />
-      <Link to='/meet'>meet</Link> <br />
-      <Link to='/swap'>swap</Link> <br />
+      <Link to='/meet'>Meet</Link> <br />
+      <Link to='/swap'>Swap</Link> <br />
       <Link to='/store'>Store</Link> <br />
       <Link to='/vault'>Vault</Link> <br />
       <Link to='/swag8'>Swag8</Link> <br />
       <Link to='/land'>My Land</Link> <br />
       <Link to='/advertise'>Advertise</Link> <br />
+      <Link to='/gangs'>Gangs</Link> <br />
     </div>
   )
 }

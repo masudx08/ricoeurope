@@ -1,0 +1,160 @@
+.gangsCont{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../assets/img/Prison/prison2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 50px  0;
+}
+.gangsCont .star19 h5{
+  margin: 0;
+}
+.gangsCont .star19{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.gangsCont .star19 svg{
+  color: var(--primary-color);
+  font-size: 22px;
+}
+.gangsCont p{
+  margin-bottom: 0;
+}
+
+.gangsCont  button{
+  color: var(--secondary-color);
+  width: 90px;
+  text-align: center;
+  font-weight: 700;
+  padding: 3px 0;
+  border-radius: 3px;
+  border: none;
+  outline:  none;
+  margin: 0 4px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.gangsCont .outline-btn{
+  background: none;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  font-weight: 500;
+  color: white;
+  font-family: 'Gilroy', sans-serif;
+}
+.gangsCont .yellow-btn{
+  background: var(--primary-color);
+}
+.gangsCont .green-btn{
+  background: var(--green-color);
+}
+.gangsCont .red-btn{
+  background: var(--red-color);
+}
+
+.gangsCont .section1{
+  background: var(--dark-secondary);
+  padding: 10px;
+}
+
+.gangsCont .section1__left__sec1{
+  margin-bottom: 10px;
+}
+.gangsCont .section1__left__sec1 .item{
+  background-color: var(--secondary-color);
+  padding: 5px 
+}
+
+
+.gangsCont .section1__left__sec2 .item1, .gangsCont .section1__left__sec2 .item2{
+  background-color: var(--secondary-color);
+  padding: 5px ;
+  height: 100%;
+  padding: 15px;
+}
+
+
+ .gangsCont .section1__left__sec2 .item2 .item{
+  display: flex;
+  justify-content: space-between;
+}
+.gangsCont .section1__left__sec2 .item p{
+  width: 50%;
+  text-align:start
+}
+.gangsCont .section1__left__sec3{
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-color);
+  margin-top: 15px;
+  padding: 10px
+}
+.gangsCont .section1__left__sec3 .imgCont{
+  background-color: rgb(21 18 18);
+  padding: 10px 20px;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+
+/* Section 1 Right Part  */
+.gangsCont .section1__right{
+  height: 100%;
+}
+.gangsCont .section1__right .item{
+  display: flex;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  column-gap: 10px;
+  align-items: center;
+}
+.gangsCont .section1__right .imgCont{
+  width: 80px;
+  padding: 10px;
+  border-radius: 4px;
+  background: rgb(21 18 18);
+}
+.gangsCont .section1__right .imgCont img{
+  width:  100%;
+}
+.gangsCont .section1__right .earning{
+  position: relative;
+  width: 70%;
+  text-align: center;
+}
+.gangsCont .section1__right .earning .hide{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--dark-secondary);
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.gangsCont .wantedLevel{
+  padding-left: 10px
+}
+.gangsCont .wantedLevel svg{
+  font-size: 18px;
+
+}
+
+.gangsCont .section1__right .dateTime{
+  column-gap: 10px;
+  font-size: 14px;
+  background: #313131;
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+}
+.gangsCont .section1__right .regenerate{
+  background: #313131;
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}

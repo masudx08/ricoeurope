@@ -33,6 +33,7 @@ import Vault from './pages/Vaults/Vault';
 import Swag8 from './pages/Swag8/Swag8';
 import Land from './pages/Land/Land';
 import Advertise from './pages/Advertise/Advertise';
+import Gangs from './pages/Gangs/Gangs';
 
 export const MyContext = React.createContext()
 function App() {
@@ -81,6 +82,7 @@ const defaultValue={
           <Route path="/swag8" element={<Swag8 />} />
           <Route path="/land" element={<Land />} />
           <Route path="/advertise" element={<Advertise />} />
+          <Route path="/gangs" element={<Gangs />} />
 
 
 
