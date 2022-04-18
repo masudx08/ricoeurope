@@ -19,8 +19,9 @@ import Item2 from "../../assets/img/Attack_Defence_Items/gasmask6.png";
 import Item3 from "../../assets/img/Attack_Defence_Items/attackdog2.png";
 import Item4 from "../../assets/img/Attack_Defence_Items/poisongas12.png";
 import Item5 from "../../assets/img/Attack_Defence_Items/helicopter.png";
-
+import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import { FaStarHalfAlt, FaStar, FaRegStar } from "react-icons/fa";
+import ItemSlider from "../../components/ItemSlider/ItemSlider";
 export default function Gangs() {
   const [show, setShow] = useState(false);
   return (
@@ -44,13 +45,16 @@ export default function Gangs() {
                 </div>
               </Col>
               <Col md={6}>
-                <div className="item d-flex">
+                <div className="item d-flex align-items-center px-2">
                   <p>01/05</p>
-                  <p>{"< >"}</p>
+                  <div className="arrowCont">
+                      <IoIosArrowDropleft className='arrow' />
+                      <IoIosArrowDropright className='arrow' />
+                  </div>
                 </div>
               </Col>
             </Row>
-            <Row className="section1__left__sec2">
+            <Row className="section1__left__sec2" style={{rowGap:'20px'}}>
               <Col md={6}>
                 <div className="item1">
                   <img style={{ height: "250px" }} src={LeaderF} alt="" />
@@ -89,8 +93,8 @@ export default function Gangs() {
               <div className="imgCont">
                 <img src={KnifeIcon} alt="" />
               </div>
-              <div>
-                <div className="mb-1">
+              <div style={{textAlign:'start'}}>
+                <div className="mb-1" >
                   <button className="green-btn">Pvp</button>
                   <button className="green-btn">Cartel</button>
                   <button className="red-btn">Tournament</button>
@@ -156,7 +160,7 @@ export default function Gangs() {
                 <img src={ShieldIcon} alt="" />
               </div>
               <div>
-                <div className="d-flex mb-2 dateTime" >
+                <div className="d-flex mb-2 dateTime">
                   <div>
                     <p>03</p>
                     <p>Days</p>
@@ -185,17 +189,214 @@ export default function Gangs() {
                 <img src={PlusIcon} alt="" />
               </div>
               <div>
-               <div className='regenerate'>
+                <div className="regenerate">
                   <p>80%</p>
-               </div>
-               <div>
+                </div>
+                <div>
                   <button className="yellow-btn">Regenerate</button>
-                <button className="yellow-btn">Pay 4 all</button>
-               </div>
+                  <button className="yellow-btn">Pay 4 all</button>
+                </div>
               </div>
             </div>
           </Col>
         </Row>
+        <div>
+          <Row className="justify-content-between" style={{rowGap:'15px'}} >
+            <Col md={5}>
+              <p className='titleArea'>Member 3/12</p>
+              <ItemSlider
+                showItem={3}
+                items={[
+                  { img: Member },
+                  { img: Member },
+                  { img: Member },
+                ]}
+              />
+            </Col>
+            <Col md={5}>
+            <p className='titleArea'>Available</p>
+              <ItemSlider
+                showItem={2}
+                items={[
+                  { img: Member },
+                  { img: "" },
+                ]}
+              />
+            </Col>
+          </Row>
+        </div>
+        <div>
+          <Row className="justify-content-between" style={{rowGap:'15px'}} >
+            <Col md={5}>
+              <p className='titleArea'>Thieves 2/2</p>
+              <ItemSlider
+                showItem={3}
+                items={[
+                  { img: Thief },
+                  { img: Thief },
+                ]}
+              />
+            </Col>
+            <Col md={5}>
+            <p className='titleArea'>Available</p>
+              <ItemSlider
+                showItem={2}
+                items={[
+                  { img: Thief },
+                  { img: "" },
+                ]}
+              />
+            </Col>
+          </Row>
+        </div>
+        <div>
+          <Row className="justify-content-between" style={{rowGap:'15px'}} >
+            <Col md={5}>
+              <p className='titleArea'>Guards 2/2</p>
+              <ItemSlider
+                showItem={3}
+                items={[
+                  { img: Guard },
+                  { img: Guard },
+                  { img: '' },
+                ]}
+              />
+            </Col>
+            <Col md={5}>
+            <p className='titleArea'>Available</p>
+              <ItemSlider
+                showItem={2}
+                items={[
+                  { img: "" },
+                  { img: "" },
+                ]}
+              />
+            </Col>
+          </Row>
+        </div>
+        <div>
+          <Row className="justify-content-between" style={{rowGap:'15px'}} >
+            <Col md={5}>
+              <p className='titleArea'>Police 2/2</p>
+              <ItemSlider
+                showItem={3}
+                items={[
+                  { img: Police },
+                  { img: Police },
+                  { img: '' },
+                ]}
+              />
+            </Col>
+            <Col md={5}>
+            <p className='titleArea'>Available</p>
+              <ItemSlider
+                showItem={2}
+                items={[
+                  { img: "" },
+                  { img: "" },
+                ]}
+              />
+            </Col>
+          </Row>
+        </div>
+        <div>
+          <Row className="justify-content-between" style={{rowGap:'15px'}} >
+            <Col md={5}>
+              <p className='titleArea'>Spies 1/1</p>
+              <ItemSlider
+                showItem={3}
+                items={[
+                  { img: Spy },
+                ]}
+              />
+            </Col>
+            <Col md={5}>
+            <p className='titleArea'>Available</p>
+              <ItemSlider
+                showItem={2}
+                items={[
+                  { img: "" },
+                  { img: "" },
+                ]}
+              />
+            </Col>
+          </Row>
+        </div>
+        <div>
+          <Row className="justify-content-between" style={{rowGap:'15px'}} >
+            <Col md={5}>
+              <p className='titleArea'>Attack Items 2/7</p>
+              <ItemSlider
+                showItem={3}
+                items={[
+                  { img: Item1 },
+                  { img: Item2 },
+                  { img: '', alt:'Earn 20 Stars' },
+                ]}
+              />
+            </Col>
+            <Col md={5}>
+            <p className='titleArea'>Available</p>
+              <ItemSlider
+                showItem={2}
+                items={[
+                  { img: "" },
+                  { img: "" },
+                ]}
+              />
+            </Col>
+          </Row>
+        </div>
+        <div>
+          <Row className="justify-content-between" style={{rowGap:'15px'}} >
+            <Col md={5}>
+              <p className='titleArea'>Defence Items 2/7</p>
+              <ItemSlider
+                showItem={3}
+                items={[
+                  { img: Item3 },
+                  { img: Item4 },
+                  { img: '', alt:'Earn 20 Stars' },
+                ]}
+              />
+            </Col>
+            <Col md={5}>
+            <p className='titleArea'>Available</p>
+              <ItemSlider
+                showItem={2}
+                items={[
+                  { img: "" },
+                  { img: "" },
+                ]}
+              />
+            </Col>
+          </Row>
+        </div>
+        <div>
+          <Row className="justify-content-between" style={{rowGap:'15px'}} >
+            <Col md={5}>
+              <p className='titleArea'>Travel Items 1/3</p>
+              <ItemSlider
+                showItem={3}
+                items={[
+                  { img: Item5 },
+                  { img: '' },
+                ]}
+              />
+            </Col>
+            <Col md={5}>
+            <p className='titleArea'>Available</p>
+              <ItemSlider
+                showItem={2}
+                items={[
+                  { img: "" },
+                  { img: "" },
+                ]}
+              />
+            </Col>
+          </Row>
+        </div>
+        <button className="green-btn mt-3" style={{width:'100%', color:'white'}}>Save</button>
       </Container>
     </div>
   );

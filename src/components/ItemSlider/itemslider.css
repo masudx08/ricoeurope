@@ -1,0 +1,50 @@
+.ItemSliderCarousel .myslider{
+  text-align: center;
+  margin: 0 10px;
+}
+ .ItemSliderCarousel .myslider .imgCont{
+  height: 100%;
+  background-color: var(--secondary-color);
+  padding: 5px;
+  border-radius: 4px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color)
+}
+.ItemSliderCarousel .myslider .imgCont img{
+  border-radius: 4px;
+}
+
+ .ItemSliderCarousel .react-multiple-carousel__arrow--left,
+.ItemSliderCarousel .react-multiple-carousel__arrow--right {
+  display: none;
+}
+.ItemSliderCarousel{
+  position: relative;
+}
+
+.ItemSliderCarousel .prev__btn {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.ItemSliderCarousel .next__btn {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.ItemSliderCarousel .prev__btn, .ItemSliderCarousel .next__btn{
+  cursor: pointer
+}
+.ItemSliderCarousel .prev__btn svg, .ItemSliderCarousel .next__btn svg{
+  font-size: 30px;
+  color: gray;
+}
